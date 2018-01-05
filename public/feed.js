@@ -177,7 +177,7 @@ app.controller('feedController', function($scope, $http, $timeout) {
   }
 
   $scope.saveComment = function(id, comment, index) {
-    if (comment == "") {
+    if (comment == ""|| comment === undefined) {
       return false;
     }
     var comBox = document.getElementById("commentInput_" + index);
