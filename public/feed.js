@@ -179,9 +179,6 @@ app.controller('feedController',function($scope, $http, $timeout){
   }
 
    $scope.saveComment = function (id, comment,index){
-     if (comment == ""){
-       return false
-     }
     var comBox = document.getElementById("commentInput_"+index);
     comToPush = {"userImageID": id, "comment": comment};
     if (typeof $scope.comments[id]=='undefined'){

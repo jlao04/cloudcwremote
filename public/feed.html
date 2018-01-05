@@ -58,7 +58,7 @@
 
         <div class="container">
           <div class="clearfix">
-            <form name="commentForm_{{$index}}" data-ng-submit="saveComment(story.userImageID,story.newcomment,$index)" >
+            <form name="commentForm_{{$index}}" data-ng-submit="saveComment(story.userImageID,story.newcomment,$index);story.newcomment=''" >
 
              <input type="text" id="commentInput_{{$index}}" class="commentInput" data-ng-model ="story.newcomment"  placeholder="Add a comment"/>
              <input type="submit" value="Send" class="button buttonBlue commentButton"/>
